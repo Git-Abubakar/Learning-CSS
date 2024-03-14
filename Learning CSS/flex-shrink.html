@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex-Shrink</title>
+    <style>
+        
+        .box {
+            height: 200px;
+            width: 200px;
+            border: 3px solid black;
+            margin: 5px;
+            text-align: center;
+            }
+        
+            #heading {margin-left: 60px;}
+        
+        #container {
+            height: 300px;
+            width: 600px;
+            margin: 20px;
+            border: 3px solid black;
+            background-color: lavender;
+            
+            display: flex;
+            justify-content: center;
+           
+           
+        }
+         
+        #box1 {background-color: tomato;}
+        #box2 {background-color: yellow;}
+        /* The flex-shrink property specifies how the item will shrink relative to the rest of the flexible items inside the same container. 
+        if flex-shrink: is 0; The element will not shrink it will retain the width it needs, and not wrap its content. Its siblings will shrink to give space to the target element.Because the target element will not wrap its content, there is a chance for the flexbox container's content to overflow.*/
+        #box3 {background-color: blueviolet; flex-shrink: 4;}
+        #box4 {background-color: aqua;}
+       
+       
+
+    </style>
+</head>
+<body>
+    
+    <h1 id="heading">Flex Container</h1>
+    <div id="container">
+        
+        <div id="box1" class="box">Flex Item 1</div>
+        <div id="box2" class="box">Flex Item 2</div>
+        <div id="box3" class="box">Flex Item 3</div>
+        <div id="box4" class="box">Flex Item 4</div>
+        
+    </div>
+    
+    
+
+</body>
+</html>

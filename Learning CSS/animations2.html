@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Animations</title>
+    <style>
+        /* CSS animations make it possible to animate transitions from one CSS style configuration to another. 
+        Animations consist of two components, a style describing the CSS animation and a set of keyframes that indicate the start and end states of the animation's style, as well as possible intermediate waypoints. */
+        
+        .box {
+            height: 150px;
+            width: 150px;
+            text-align: center;
+            border: 2px solid black;
+            border-radius: 5px;
+            background-color: aqua;
+            position: relative;
+            top: 150px;
+            left: 500px;
+
+           animation: HelloWorld 2s ease-in-out 1s infinite alternate;
+        }
+
+        @keyframes HelloWorld {
+
+            0% {left: 10px;}
+            50% {left: 50px;}
+            60% {left: 160%;}
+            100% {left: 200px;}
+        }
+    
+    </style>
+
+</head>
+<body>
+    <div class="box">Animate</div>
+</body>
+</html>

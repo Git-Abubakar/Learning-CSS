@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Transforms Scale</title>
+    <style>
+        .box {
+            height: 50px;
+            width: 50px;
+            padding: 5px;
+            margin: 20pxs;
+            border: 2px solid black;
+            border-radius: 5px;
+            position: relative;
+            top: 50px;
+            left: 150px;
+            transition: all 1s ease-in;
+        }
+        #box0 {background-color: rgb(53, 160, 248);}
+        #box0:hover { transform: scale(0.5);}
+        #box1 {background-color: chartreuse;}
+        #box1:hover { transform: scale(2);}
+        #box2 {background-color: rgb(247, 123, 46);}
+        #box2:hover { transform: scale(8);}
+        #box3 {background-color: rgb(247, 200, 46);}
+        #box3:hover { transform:  scale(6);}
+        #box4 {background-color: rgb(247, 82, 82);}
+        #box4:hover { transform:  scale(4);}
+
+
+
+    </style>
+</head>
+<body>
+    <div id="box0" class="box">0.5 times bigger</div><br>
+    <div id="box1" class="box">2 times bigger</div><br>
+    <div id="box2" class="box">8 times bigger</div><br>
+    <div id="box3" class="box">6 times bigger</div><br>
+    <div id="box4" class="box">4 times bigger</div><br>
+   
+</body>
+</html>

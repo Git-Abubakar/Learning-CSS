@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo-Classes</title>
+    <style>
+        /* Used to define special states of HTML elemets, target elemets based on their position or  user action */ 
+        .pseudo {
+            height: 25px;
+            width: 150px;
+            background-color: goldenrod;
+            border: 2px solid black;
+            border-radius: 5px;    
+        }
+
+        .pseudo:hover {
+            height: 30px;
+            width: 160px;
+            background-color: skyblue;
+        }
+        
+        .pseudo:active {
+            height: 30px;
+            width: 160px;
+            background-color: royalblue;
+
+        }
+    </style>
+
+
+</head>
+<body>
+    <button class="pseudo">Learning Pseudo</button>
+</body>
+</html>
